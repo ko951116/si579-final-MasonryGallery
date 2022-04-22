@@ -152,3 +152,18 @@ h5 {
 .img-window img {
     height: 60%;
 }
+
+footer {
+    justify-content: center;
+    text-align: center;
+    background: rgba(0,0,0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+footer p {
+    font-size: 12px;
+}
