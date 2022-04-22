@@ -122,18 +122,18 @@ blurBtn.addEventListener('click', () => {
     imgUrl6.src = "https://picsum.photos/200/350?blur";
     imgUrl7.src = "https://picsum.photos/300/400?blur";
     imgUrl8.src = "https://picsum.photos/190/300?blur";
-    imgUrl9.src = "https://picsum.photos/200/200?blur";
-    imgUrl10.src = "https://picsum.photos/200/140?blur";
+    imgUrl9.src = "https://picsum.photos/200/212?blur";
+    imgUrl10.src = "https://picsum.photos/300/140?blur";
     imgUrl11.src = "https://picsum.photos/240/200?blur";
     imgUrl12.src = "https://picsum.photos/200/330?blur";
     imgUrl13.src = "https://picsum.photos/200/190?blur";
-    imgUrl14.src = "https://picsum.photos/230/400?blur";
+    imgUrl14.src = "https://picsum.photos/230/401?blur";
     imgUrl15.src = "https://picsum.photos/200/120?blur";
-    imgUrl16.src = "https://picsum.photos/190/300?blur";
-    imgUrl17.src = "https://picsum.photos/200/300?blur";
+    imgUrl16.src = "https://picsum.photos/190/310?blur";
+    imgUrl17.src = "https://picsum.photos/200/313?blur";
     imgUrl18.src = "https://picsum.photos/200/160?blur";
-    imgUrl19.src = "https://picsum.photos/200/300?blur";
-    imgUrl20.src = "https://picsum.photos/200/300?blur";
+    imgUrl19.src = "https://picsum.photos/310/302?blur";
+    imgUrl20.src = "https://picsum.photos/210/320?blur";
     imagesLoaded(grid).on('progress', function() {
         msnry.layout();
     });
