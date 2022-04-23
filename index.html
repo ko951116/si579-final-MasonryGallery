@@ -1,246 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Masonry Album</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script src="https://kit.fontawesome.com/0de8e5df92.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Album</title>
 
-<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/0de8e5df92.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> -->
 
 
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 
 </head>
 <body>
-    <!-------------- nav -------------->
-    <!-- <nav class="navbar">
-        <ul class="menu">
-            <li><a href="#home" class="menu-btn">HOME</a></li>
-            <li><a href="myalbum.html" class="menu-btn">MY ALBUM</a></li>
-        </ul>
-    </nav> -->
+
 
     <!-------------- landing -------------->
     <div class="landing">
         <h1>Masonry Photo Gallery</h1><br>
         <h5>Welcome to the Masonry Photo Gallery!📸</h5>
         <p>
+            1. Click one of the buttons right below this description to choose the style of the pictures you want.
+            <br>2. You can save the picture with the "SAVE" button when you click on the picture.
+            <br>3. You can view your saved picture gallery on the bottom of the page. Or click here: <a class="savedPicLink" href="#savedPic">VIEW SAVED PICTURES</a>
+
             
-            <br>Here, you can view color, grayscale, or blurry random pictures in Masonry style. 
+            <!-- <br>Here, you can view color, grayscale, or blurry random pictures in Masonry style. 
             
             <br>Click one of the button on the right to choose the style of the picture you want. You can see the original picture by clicking on it. 
+       -->
         </p>
     </div>
-<!--     
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Colored 
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Grayscale 
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Blur 
-        </label>
-    </div> -->
-    
-<!-- 
-    <form>
-        <div class="form-check form-check-inline">
-            
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-            <label class="form-check-label" for="inlineRadio1">3</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">4</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">5</label>
-          </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="exampleFormControlSelect">Picture Style</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Colored 
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Grayscale 
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Blur 
-                    </label>
-                </div>    
-            </div>
-            <div class="form-group col-md-4">
-                <label for="exampleFormControlSelect">Columns</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      3 
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      4 
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      5 
-                    </label>
-                </div>
-            </div>
-        </div>
-        <button id="submit" type="submit" class="btn btn-primary mb-2">Create!</button>
-    </form> -->
 
 
-<!--   
-        <input id="inputText" type="text">
-        <button id="submit" class="btn btn-primary mb-2">Create!</button> -->
-
+    <!-------------- landing -------------->
     <div class="buttons">
         <button id="grayBtn"class="btn btn-secondary mb-2">Grayscale</button>
         <button id="blurBtn"class="btn btn-info mb-2">Blur</button>
-        <button id="colorBtn"class="btn btn-primary mb-2">Color</button>
+        <button id="colorBtn"class="btn btn-warning mb-2">Color</button>
     </div>
+    
 
+    <!-------------- gallery start -------------->
+    <div class="wrap">
+        <div id="gridDisplay" class="grid top">
+            <div class="grid-sizer"></div>
 
-    <div id="gridDisplay" class="grid">
-        <div class="grid-sizer"></div>
-        <div class="grid-sizer3"></div>
-        <div class="grid-sizer4"></div>
-        <div class="grid-sizer5"></div>
-
-        <div class="grid-item hover">
-            <img id="img" src="img/img1.jpg" />
-            <div class="overlay">
-                <!-- <button id="saveBtn" type="button" class="btn btn-light">SAVE</button> -->
+            <div class="grid-item hover">
+                <img id="img" class="pic" src="img/img1.jpg" />
+                <div class="overlay">
+                    <!-- <button id="saveBtn" type="button" class="btn btn-light">SAVE</button> -->
+                </div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img2" class="pic" src="https://picsum.photos/200/300" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img3" class="pic" src="https://picsum.photos/200/180" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img4" class="pic" src="https://picsum.photos/200/200" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img5" class="pic" src="https://picsum.photos/200/100" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img6" class="pic" src="https://picsum.photos/210/430" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img7" class="pic" src="https://picsum.photos/300/400" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img8" class="pic" src="https://picsum.photos/220/300" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img9" class="pic" src="https://picsum.photos/200/123" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img10" class="pic" src="https://picsum.photos/200/400" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img11" class="pic" src="https://picsum.photos/300/330" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img12" class="pic" src="https://picsum.photos/200/450" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img13" class="pic" src="https://picsum.photos/210/321" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img14" class="pic" src="https://picsum.photos/500/300" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img15" class="pic" src="https://picsum.photos/210/200" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img16" class="pic" src="https://picsum.photos/200/100" />
+                <div class="overlay"></div>
+            </div>    
+            <div class="grid-item hover">
+                <img id="img17" class="pic" src="https://picsum.photos/200/185" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img18" class="pic" src="https://picsum.photos/315/300" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img19" class="pic" src="https://picsum.photos/195/300" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img20" class="pic" src="https://picsum.photos/200/219" />
+                <div class="overlay"></div>
+            </div>
+            <div class="grid-item hover">
+                <img id="img21" class="pic" src="https://picsum.photos/200/220" />
+                <div class="overlay"></div>
             </div>
         </div>
-        <div class="grid-item hover">
-            <img id="img2" src="https://picsum.photos/200/300" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img3" src="https://picsum.photos/200/180" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img4" src="https://picsum.photos/200/200" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img5" src="https://picsum.photos/200/100" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img6" src="https://picsum.photos/210/430" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img7" src="https://picsum.photos/300/400" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img8" src="https://picsum.photos/220/300" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img9" src="https://picsum.photos/200/123" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img10" src="https://picsum.photos/200/400" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img11" src="https://picsum.photos/300/330" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img12" src="https://picsum.photos/200/450" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img13" src="https://picsum.photos/210/321" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img14" src="https://picsum.photos/190/300" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img15" src="https://picsum.photos/210/200" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img16" src="https://picsum.photos/200/100" />
-            <div class="overlay"></div>
-        </div>    
-        <div class="grid-item hover">
-            <img id="img17" src="https://picsum.photos/200/185" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img18" src="https://picsum.photos/315/300" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img19" src="https://picsum.photos/195/300" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img20" src="https://picsum.photos/200/219" />
-            <div class="overlay"></div>
-        </div>
-        <div class="grid-item hover">
-            <img id="img21" src="https://picsum.photos/200/110" />
-            <div class="overlay"></div>
-        </div>
 
-        <!-- <div id class="grid-item hover">
-            
-        </div> -->
-      
-      
-        <!-- <div class="grid-item addBtn">
-            <button id="addPic" type="button" class="btn btn-danger">+</button>
-        </div> -->
 
+        <div id="savedPic" class="grid2 bottom">
+            <h3>Your Saved Pictures ⬇️</h3>
+            <div class="grid-sizer2"></div>
+        </div>
     </div>
 
-
-    <footer>
+    <!-- <footer>
         <span>Created By Jiyoon Ko </span>
         <p>Picture sources: <a target="blank" href="https://picsum.photos/">https://picsum.photos/</a></p>
-    </footer>
+    </footer> -->
     <script src="app.js"></script>
 </body>
 </html>
