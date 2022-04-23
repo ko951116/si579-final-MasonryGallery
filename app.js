@@ -95,7 +95,7 @@ colorBtn.addEventListener('click', () => {
     imgUrl6.src = "https://picsum.photos/200/350";
     imgUrl7.src = "https://picsum.photos/300/400";
     imgUrl8.src = "https://picsum.photos/300/300";
-    imgUrl9.src = "https://picsum.photos/200/200";
+    imgUrl9.src = "https://picsum.photos/200/210";
     imgUrl10.src = "https://picsum.photos/200/140";
     imgUrl11.src = "https://picsum.photos/240/200";
     imgUrl12.src = "https://picsum.photos/200/330";
@@ -172,7 +172,6 @@ function viewImg() {
 
             saveButton.addEventListener('click', () => {
                 var grid2 = document.querySelector('.grid2');
-
 
                 console.log(this.parentElement.children[0])
                 const savedPic = document.querySelector('#savedPic');

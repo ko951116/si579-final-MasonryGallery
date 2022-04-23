@@ -1,46 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
 
 .buttons {
     text-align: center;
     margin-top: 50px;
 }
-.addBtn {
-    text-align: center;
-}
 
 
 .grid { 
-    /* width:100%; */
-    /* margin: 0 auto; */
     display: block;
     margin-top: 10px;
 }
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
 .grid-sizer, .grid-item{ 
     width: 25%; 
 }
-.grid-sizer2 .grid-item2{
+/* .grid-sizer2 .grid-item2{
     width: 25%;
-}
-/* .grid-sizer, .grid-item { width: 200px; } */
+} */
 .grid-item {
-    float: left;
-    /* margin-bottom:20px; */
     cursor: pointer;
 }
 
-.grid .hover .overlay{
+.grid .overlay{
     opacity: 0;
     background-color: rgba(0,0,0, 0.7);
     position: absolute;
@@ -48,10 +28,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    /* transition: .5s; */
 }
 
-.grid .hover:hover .overlay{
+.grid .overlay:hover{
     opacity: 1;
 }
 
