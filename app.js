@@ -44,8 +44,6 @@ const imgUrl20 = document.querySelector('#img20');
 const imgUrl21 = document.querySelector('#img21');
 
 
-const max = 450;
-const min = 190;
 //--------------------Buttons--------------------
 grayBtn.addEventListener('click', () => {
     const pic = grid.getElementsByClassName('pic');
@@ -151,7 +149,7 @@ function viewImg() {
             console.log(this.parentElement.children[0])
 
             const viewBg = document.createElement('div');
-            viewBg.classList.add('img-window');
+            viewBg.classList.add('imgView');
     
             const selectedImg = document.createElement('img');
             selectedImg.setAttribute('src', this.parentElement.children[0].src);
@@ -199,58 +197,9 @@ function viewImg() {
             });
 
             viewBg.addEventListener('click', () => {
-                document.querySelector(".img-window").remove();
+                document.querySelector('.imgView').remove();
             });
         }
     }
 }
-
-window.addEventListener("mousedown", viewImg);
-
-
-// submitBtn.addEventListener('click', () => {
-//     // if (controlSelect1.textContent === 'Grayscale') {
-//     //     console.log('hieeeeefwefew')
-        
-//     //     imgUrl.src = "https://picsum.photos/200/300?grayscale"
-
-//     // }
-
-//     if (input.value === '3') {
-//         // input.value = 'hi';
-
-//         console.log('hihhihii')
-//         msnry.columnWidth = '.grid-sizer3';
-//         msnry.itemSelector = '100px';
-
-//         console.log(msnry.columnWidth)
-//         msnry.layout();
-
-        
-//     }
-
-//     if (input.value === 'gray') {
-//         imgUrl.src = "https://picsum.photos/200/300?grayscale";
-//         imgUrl2.src = "https://picsum.photos/100/200?grayscale"
-//         imgUrl3.src = "https://picsum.photos/200/400?grayscale"
-//         imgUrl4.src = "https://picsum.photos/200/220?grayscale"
-//         imgUrl5.src = "https://picsum.photos/110/300?grayscale"
-//         imgUrl6.src = "https://picsum.photos/200/302?grayscale";
-//         imgUrl7.src = "https://picsum.photos/302/400?grayscale"
-//         imgUrl8.src = "https://picsum.photos/140/300?grayscale"
-//         imgUrl9.src = "https://picsum.photos/200/200?grayscale"
-//         imgUrl10.src = "https://picsum.photos/200/140?grayscale"
-//         imgUrl11.src = "https://picsum.photos/240/200?grayscale";
-//         imgUrl12.src = "https://picsum.photos/200/330?grayscale";
-//         imgUrl13.src = "https://picsum.photos/200/300?grayscale";
-//         imgUrl14.src = "https://picsum.photos/230/400?grayscale";
-//         imgUrl15.src = "https://picsum.photos/200/120?grayscale";
-//         imgUrl16.src = "https://picsum.photos/200/300?grayscale";
-//         imgUrl17.src = "https://picsum.photos/200/300?grayscale";
-//         imgUrl18.src = "https://picsum.photos/200/120?grayscale";
-//         imgUrl19.src = "https://picsum.photos/200/300?grayscale";
-//         imgUrl20.src = "https://picsum.photos/200/300?grayscale";
-//         msnry.layout();
-
-//     }
-// });
+window.addEventListener('click', viewImg);
